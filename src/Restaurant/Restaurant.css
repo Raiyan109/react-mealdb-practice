@@ -1,0 +1,23 @@
+.meals-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media screen and (max-width:767px) {
+    .meals-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 10px 30px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1043px) {
+    .meals-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 10px 30px;
+    }
+}
